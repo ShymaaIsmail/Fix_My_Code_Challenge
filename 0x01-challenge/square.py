@@ -11,8 +11,10 @@ class Square():
         self.height = 0
         for key, value in kwargs.items():
             setattr(self, key, value)
+        if self.height != self.width:
+            raise ValueError("Square height must be equal to square width")
 
-    def area_of_my_Square(self):
+    def area_of_my_square(self):
         """ Area of the Square """
         return self.width * self.height
 
@@ -29,5 +31,5 @@ if __name__ == "__main__":
     """ test sample of square"""
     s = Square(width=12, height=9)
     print(s)
-    print(s.area_of_my_Square())
+    print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
