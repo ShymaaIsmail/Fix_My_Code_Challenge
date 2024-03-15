@@ -3,6 +3,7 @@
 
 
 class Square():
+    """ class square docs"""
 
     width = 0
     height = 0
@@ -18,7 +19,7 @@ class Square():
 
     def PermiterOfMySquare(self):
         """Permiter of the Square """
-        return (self.width * 4)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """stringify the Square class"""
