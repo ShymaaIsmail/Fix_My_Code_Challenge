@@ -5,9 +5,6 @@
 class Square():
     """ class square docs"""
 
-    width = 0
-    height = 0
-
     def __init__(self, *args, **kwargs):
         """ init function for Square"""
         for key, value in kwargs.items():
