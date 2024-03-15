@@ -12,15 +12,15 @@ class Square():
 
     def area_of_my_Square(self):
         """ Area of the Square """
-        return self.width * self.height
+        return self.width * self.width
 
     def PermiterOfMySquare(self):
         """Permiter of the Square """
-        return (self.width * 2) + (self.height * 2)
+        return (self.width * 2) + (self.width * 2)
 
     def __str__(self):
         """stringify the Square class"""
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.width, self.width)
 
 
 if __name__ == "__main__":
